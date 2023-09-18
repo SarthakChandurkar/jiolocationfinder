@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { FiSettings } from 'react-icons/fi';
+import { BsPlusLg } from 'react-icons/bs';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
@@ -36,7 +36,7 @@ const App = () => {
                 style={{ background: currentColor, borderRadius: '50%' }}
                 className="text-3xl text-white p-3 hover:drop-shadow-xl hover:bg-light-gray"
               >
-                <FiSettings />
+                <BsPlusLg />
               </button>
 
             </TooltipComponent>
@@ -66,7 +66,7 @@ const App = () => {
               <Routes>
                 {/* dashboard  */}
                 <Route path="/" element={(<Ecommerce />)} />
-                <Route path="/ecommerce" element={(<Ecommerce />)} />
+                <Route path="/Projects" element={(<Ecommerce />)} />
 
                 {/* pages  */}
                 <Route path="/orders" element={<Orders />} />
