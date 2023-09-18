@@ -5,6 +5,7 @@ import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { themeColors } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
+import Upload from "./Upload.js"
 
 const ThemeSettings = () => {
   const { setColor, setMode, currentMode, currentColor, setThemeSettings } = useStateContext();
@@ -13,7 +14,7 @@ const ThemeSettings = () => {
     <div className="bg-half-transparent w-screen fixed nav-item top-0 right-0">
       <div className="float-right h-screen dark:text-gray-200  bg-white dark:bg-[#484B52] w-400">
         <div className="flex justify-between items-center p-4 ml-4">
-          <p className="font-semibold text-lg">Settings</p>
+          <p className="font-semibold text-lg">Upload</p>
           <button
             type="button"
             onClick={() => setThemeSettings(false)}
@@ -24,7 +25,8 @@ const ThemeSettings = () => {
           </button>
 
         </div>
-        <div className="flex-col border-t-1 border-color p-4 ml-4">
+      <Upload />
+        {/* <div className="flex-col border-t-1 border-color p-4 ml-4">
           <p className="font-semibold text-xl ">Theme Option</p>
 
           <div className="mt-4">
@@ -37,7 +39,7 @@ const ThemeSettings = () => {
               onChange={setMode}
               checked={currentMode === 'Light'}
             />
-            {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
+            
             <label htmlFor="light" className="ml-2 text-md cursor-pointer">
               Light
             </label>
@@ -52,7 +54,7 @@ const ThemeSettings = () => {
               className="cursor-pointer"
               checked={currentMode === 'Dark'}
             />
-            {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
+            
             <label htmlFor="dark" className="ml-2 text-md cursor-pointer">
               Dark
             </label>
@@ -79,7 +81,7 @@ const ThemeSettings = () => {
               </TooltipComponent>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
