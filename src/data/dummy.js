@@ -71,18 +71,18 @@ export const kanbanGrid = [
 ];
 const gridEmployeeProfile = (props) => (
   <div className="flex items-center gap-2">
-    <img
+    {/* <img
       className="rounded-full w-10 h-10"
       src={props.EmployeeImage}
       alt="employee"
-    />
+    /> */}
     <p>{props.Name}</p>
   </div>
 );
 
 const gridEmployeeCountry = (props) => (
   <div className="flex items-center justify-center gap-2">
-    <GrLocation />
+    {/* <GrLocation /> */}
     <span>{props.Country}</span>
   </div>
 );
@@ -461,8 +461,8 @@ export const customersGrid = [
 
 export const employeesGrid = [
   {
-    headerText: 'Employee',
-    width: '150',
+    headerText: 'Project Name',
+    width: '250',
     template: gridEmployeeProfile,
     textAlign: 'Center'
   },
@@ -479,7 +479,7 @@ export const employeesGrid = [
     textAlign: 'Center',
   },
   {
-    headerText: 'Country',
+    headerText: 'University',
     width: '120',
     textAlign: 'Center',
     template: gridEmployeeCountry
@@ -947,32 +947,51 @@ export const userProfileData = [
 ];
 
 export const ordersGrid = [
-  {
-    headerText: 'Image',
-    template: gridOrderImage,
-    textAlign: 'Center',
-    width: '120',
-  },
+  // {
+  //   headerText: 'Image',
+  //   template: gridOrderImage,
+  //   textAlign: 'Center',
+  //   width: '120',
+  // },
   {
     field: 'OrderItems',
-    headerText: 'Item',
-    width: '150',
+    headerText: 'Project Name',
+    width: '250',
     editType: 'dropdownedit',
     textAlign: 'Center',
   },
   {
-    field: 'CustomerName',
-    headerText: 'Customer Name',
+    field: 'Location',
+    headerText: 'Student Name',
     width: '150',
     textAlign: 'Center',
   },
   {
     field: 'TotalAmount',
-    headerText: 'Total Amount',
-    format: 'C2',
-    textAlign: 'Center',
-    editType: 'numericedit',
+    headerText: 'College Name',
     width: '150',
+    textAlign: 'Center',
+  },
+  // {
+  //   field: 'TotalAmount',
+  //   headerText: 'College Name',
+  //   format: 'C2',
+  //   textAlign: 'Center',
+  //   editType: 'numericedit',
+  //   width: '150',
+  // },
+  
+  {
+    field: 'OrderID',
+    headerText: 'Project ID',
+    width: '120',
+    textAlign: 'Center',
+  },
+  {
+    field: 'CustomerName',
+    headerText: 'Description',
+    width: '250',
+    textAlign: 'Center',
   },
   {
     headerText: 'Status',
@@ -980,19 +999,6 @@ export const ordersGrid = [
     field: 'OrderItems',
     textAlign: 'Center',
     width: '120',
-  },
-  {
-    field: 'OrderID',
-    headerText: 'Order ID',
-    width: '120',
-    textAlign: 'Center',
-  },
-
-  {
-    field: 'Location',
-    headerText: 'Location',
-    width: '150',
-    textAlign: 'Center',
   },
 ];
 
@@ -1561,80 +1567,80 @@ export const customersData = [
 export const employeesData = [
   {
     EmployeeID: 1,
-    Name: 'Nancy Davolio',
+    Name: 'Online Blood Bank Web Application',
     Title: 'Sales Representative',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'SGBAU',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar3,
   },
   {
     EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
+    Name: 'Android Spy Camera App',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'SGBAU',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar3,
   },
   {
     EmployeeID: 3,
-    Name: 'Iulia Albu',
+    Name: 'Doctor Appointment Booking System',
     Title: 'HR',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'SGBAU',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar4,
   },
   {
     EmployeeID: 4,
-    Name: 'Siegbert Gottfried',
+    Name: 'Android Local Geofence System',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'SGBAU',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
   },
   {
     EmployeeID: 5,
-    Name: 'Omar Darobe',
+    Name: 'Android Local Geofence System',
     Title: 'HR',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'SGBAU',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
   },
   {
     EmployeeID: 4,
-    Name: 'Penjani Inyene',
+    Name: 'Android Local Geofence System',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'SGBAU',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
   },
   {
     EmployeeID: 5,
-    Name: 'Miron Vitold',
+    Name: 'Android Local Geofence System',
     Title: 'HR',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'SGBAU',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
   },
   {
     EmployeeID: 1,
-    Name: 'Nancy Davolio',
+    Name: 'Online Blood Bank Web Application',
     Title: 'Sales Representative',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'SGBAU',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -1642,40 +1648,40 @@ export const employeesData = [
   },
   {
     EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
+    Name: 'Android Spy Camera App',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'SGBAU',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar3,
   },
   {
     EmployeeID: 3,
-    Name: 'Iulia Albu',
+    Name: 'Doctor Appointment Booking System',
     Title: 'HR',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'SGBAU',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar4,
   },
   {
     EmployeeID: 4,
-    Name: 'Siegbert Gottfried',
+    Name: 'Android Local Geofence System',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'SGBAU',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
   },
   {
     EmployeeID: 5,
-    Name: 'Omar Darobe',
+    Name: 'Android Local Geofence System',
     Title: 'HR',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'SGBAU',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -2201,11 +2207,11 @@ export const employeesData = [
 export const ordersData = [
   {
     OrderID: 10248,
-    CustomerName: 'Vinet',
+    CustomerName: 'This is an online blood bank management system that helps in managing various blood bank operations effectively. The project consists of a central depository containing various blood deposits available along with associated details. These details include blood type, storage area and date of storage.',
 
-    TotalAmount: 32.38,
-    OrderItems: 'Fresh Tomato',
-    Location: 'USA',
+    TotalAmount: 'GCOEA',
+    OrderItems: 'Online Blood Bank Web Application',
+    Location: 'Dipesh Marathe',
     Status: 'pending',
     StatusBg: '#FB9678',
     ProductImage:
@@ -2213,10 +2219,10 @@ export const ordersData = [
   },
   {
     OrderID: 345653,
-    CustomerName: 'Carson Darrin',
-    TotalAmount: 56.34,
-    OrderItems: 'Butter Scotch',
-    Location: 'Delhi',
+    CustomerName: 'This is an online blood bank management system that helps in managing various blood bank operations effectively. The project consists of a central depository containing various blood deposits available along with associated details. These details include blood type, storage area and date of storage.',
+    TotalAmount: 'GCOEA',
+    OrderItems: 'Android Spy Camera App',
+    Location: 'Sarthak Chandurkar',
     Status: 'complete',
     StatusBg: '#8BE78B',
     ProductImage:
@@ -2224,10 +2230,10 @@ export const ordersData = [
   },
   {
     OrderID: 390457,
-    CustomerName: 'Fran Perez',
-    TotalAmount: 93.31,
-    OrderItems: 'Candy Gucci',
-    Location: 'New York',
+    CustomerName: 'This is an online blood bank management system that helps in managing various blood bank operations effectively. The project consists of a central depository containing various blood deposits available along with associated details. These details include blood type, storage area and date of storage.',
+    TotalAmount: 'GCOEA',
+    OrderItems: 'Doctor Appointment Booking System',
+    Location: 'Omkar Kancharlawar',
     Status: 'active',
     StatusBg: '#03C9D7',
     ProductImage:
@@ -2235,10 +2241,10 @@ export const ordersData = [
   },
   {
     OrderID: 893486,
-    CustomerName: 'Anika Viseer',
-    TotalAmount: 93.31,
-    OrderItems: 'Night Lamp',
-    Location: 'Germany',
+    CustomerName: 'This is an online blood bank management system that helps in managing various blood bank operations effectively. The project consists of a central depository containing various blood deposits available along with associated details. These details include blood type, storage area and date of storage.',
+    TotalAmount: 'GCOEA',
+    OrderItems: 'PDF to Audio Converter & Language Translator',
+    Location: 'Shifanaaz Sheikh',
     Status: 'canceled',
     StatusBg: '#FF5C8E',
     ProductImage:
@@ -2246,10 +2252,10 @@ export const ordersData = [
   },
   {
     OrderID: 748975,
-    CustomerName: 'Miron Vitold',
-    TotalAmount: 23.99,
-    OrderItems: 'Healthcare Erbology',
-    Location: 'Spain',
+    CustomerName: 'This is an online blood bank management system that helps in managing various blood bank operations effectively. The project consists of a central depository containing various blood deposits available along with associated details. These details include blood type, storage area and date of storage.',
+    TotalAmount: 'GCOEA',
+    OrderItems: 'Graphical password to Avoid Shoulder Surfing',
+    Location: 'Spandan Dongre',
     Status: 'rejected',
     StatusBg: 'red',
     ProductImage:
@@ -2257,10 +2263,10 @@ export const ordersData = [
   },
   {
     OrderID: 94757,
-    CustomerName: 'Omar Darobe',
-    TotalAmount: 95.99,
-    OrderItems: 'Makeup Lancome Rouge',
-    Location: 'USA',
+    CustomerName: 'This is an online blood bank management system that helps in managing various blood bank operations effectively. The project consists of a central depository containing various blood deposits available along with associated details. These details include blood type, storage area and date of storage.',
+    TotalAmount: 'GCOEA',
+    OrderItems: 'Space Shooter Game Python',
+    Location: 'Anurag Hagawane',
     Status: 'canceled',
     StatusBg: '#FF5C8E',
     ProductImage:
@@ -2268,10 +2274,10 @@ export const ordersData = [
   },
   {
     OrderID: 944895,
-    CustomerName: 'Lulia albu',
-    TotalAmount: 17.99,
-    OrderItems: 'Skincare',
-    Location: 'USA',
+    CustomerName: 'This is an online blood bank management system that helps in managing various blood bank operations effectively. The project consists of a central depository containing various blood deposits available along with associated details. These details include blood type, storage area and date of storage.',
+    TotalAmount: 'GCOEA',
+    OrderItems: 'College Placement System Using Python',
+    Location: 'Nidhi Kanungo',
     Status: 'active',
     StatusBg: '#03C9D7',
     ProductImage:
@@ -2279,10 +2285,10 @@ export const ordersData = [
   },
   {
     OrderID: 845954,
-    CustomerName: 'Penjani',
-    TotalAmount: 59.99,
-    OrderItems: 'Headphone',
-    Location: 'USA',
+    CustomerName: 'This is an online blood bank management system that helps in managing various blood bank operations effectively. The project consists of a central depository containing various blood deposits available along with associated details. These details include blood type, storage area and date of storage.',
+    TotalAmount: 'GCOEA',
+    OrderItems: 'Music and Shows Finder Flutter App',
+    Location: 'Aishwarya Dhanvijay',
     Status: 'complete',
     StatusBg: '#8BE78B',
     ProductImage:
@@ -2290,10 +2296,10 @@ export const ordersData = [
   },
   {
     OrderID: 845954,
-    CustomerName: 'Jie Yan',
-    TotalAmount: 87.99,
-    OrderItems: 'Shoes',
-    Location: 'USA',
+    CustomerName: 'This is an online blood bank management system that helps in managing various blood bank operations effectively. The project consists of a central depository containing various blood deposits available along with associated details. These details include blood type, storage area and date of storage.',
+    TotalAmount: 'GCOEA',
+    OrderItems: 'Multiple Disease Prediction System using Machine Learning',
+    Location: 'Shifa',
     Status: 'pending',
     StatusBg: '#FB9678',
     ProductImage:
@@ -2301,10 +2307,10 @@ export const ordersData = [
   },
   {
     OrderID: 874534,
-    CustomerName: 'Danai',
-    TotalAmount: 122.99,
-    OrderItems: 'Watch',
-    Location: 'USA',
+    CustomerName: 'This is an online blood bank management system that helps in managing various blood bank operations effectively. The project consists of a central depository containing various blood deposits available along with associated details. These details include blood type, storage area and date of storage.',
+    TotalAmount: 'GCOEA',
+    OrderItems: 'Online Auction System using Python',
+    Location: 'Sarthak',
     Status: 'canceled',
     StatusBg: '#FF5C8E',
     ProductImage:
@@ -2312,10 +2318,10 @@ export const ordersData = [
   },
   {
     OrderID: 38489,
-    CustomerName: 'Miron',
-    TotalAmount: 87.99,
-    OrderItems: 'Ice Cream',
-    Location: 'USA',
+    CustomerName: 'This is an online blood bank management system that helps in managing various blood bank operations effectively. The project consists of a central depository containing various blood deposits available along with associated details. These details include blood type, storage area and date of storage.',
+    TotalAmount: 'GCOEA',
+    OrderItems: 'Online Voting System Project Python',
+    Location: 'Sarya',
     Status: 'active',
     StatusBg: '#03C9D7',
     ProductImage:
@@ -2323,10 +2329,10 @@ export const ordersData = [
   },
   {
     OrderID: 24546,
-    CustomerName: 'Frank',
-    TotalAmount: 84.99,
-    OrderItems: 'Pan Cake',
-    Location: 'Delhi',
+    CustomerName: 'This is an online blood bank management system that helps in managing various blood bank operations effectively. The project consists of a central depository containing various blood deposits available along with associated details. These details include blood type, storage area and date of storage.',
+    TotalAmount: 'GCOEA',
+    OrderItems: 'Project 12',
+    Location: 'Sarthak',
     Status: 'complete',
     StatusBg: '#8BE78B',
     ProductImage:
@@ -2334,10 +2340,10 @@ export const ordersData = [
   },
   {
     OrderID: 874534,
-    CustomerName: 'Danai',
-    TotalAmount: 122.99,
+    CustomerName: 'This is an online blood bank management system that helps in managing various blood bank operations effectively. The project consists of a central depository containing various blood deposits available along with associated details. These details include blood type, storage area and date of storage.',
+    TotalAmount: 'GCOEA',
     OrderItems: 'Watch',
-    Location: 'USA',
+    Location: 'John',
     Status: 'canceled',
     StatusBg: '#FF5C8E',
     ProductImage:
@@ -2345,7 +2351,7 @@ export const ordersData = [
   },
   {
     OrderID: 10248,
-    CustomerName: 'Vinet',
+    CustomerName: 'This is an online blood bank management system that helps in managing various blood bank operations effectively. The project consists of a central depository containing various blood deposits available along with associated details. These details include blood type, storage area and date of storage.',
 
     TotalAmount: 32.38,
     OrderItems: 'Fresh Tomato',
@@ -2357,7 +2363,8 @@ export const ordersData = [
   },
   {
     OrderID: 345653,
-    CustomerName: 'Carson Darrin',
+    CustomerName: 'This is an online blood bank management system that helps in managing various blood bank operations effectively. The project consists of a central depository containing various blood deposits available along with associated details. These details include blood type, storage area and date of storage.',
+
     TotalAmount: 56.34,
     OrderItems: 'Butter Scotch',
     Location: 'Delhi',
@@ -2368,7 +2375,8 @@ export const ordersData = [
   },
   {
     OrderID: 390457,
-    CustomerName: 'Fran Perez',
+    CustomerName: 'This is an online blood bank management system that helps in managing various blood bank operations effectively. The project consists of a central depository containing various blood deposits available along with associated details. These details include blood type, storage area and date of storage.',
+
     TotalAmount: 93.31,
     OrderItems: 'Candy Gucci',
     Location: 'New York',
