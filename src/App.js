@@ -71,13 +71,13 @@ const App = () => {
                 {/* pages  */}
                 <Route path="/Project_Status" element={<Orders />} />
                 <Route path="/Project_Hunt" element={<Employees />} />
-                <Route path="/Developers" element={<Customers />} />
+                <Route path="/Connect" element={<Customers />} />
 
                 {/* apps  */}
-                <Route path="/kanban" element={<Kanban />} />
-                <Route path="/editor" element={<Editor />} />
-                <Route path="/calendar" element={<Calendar />} />
-                <Route path="/color-picker" element={<ColorPicker />} />
+                <Route path="/Pull_Requests" element={<Kanban />} />
+                <Route path="/Domains" element={<Editor />} />
+                <Route path="/Github" element={<Calendar />} />
+                <Route path="/Recommended_Projects" element={<ColorPicker />} />
 
                 {/* charts  */}
                 <Route path="/line" element={<Line />} />

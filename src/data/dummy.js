@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock, AiOutlineFolderOpen, AiOutlineSearch } from 'react-icons/ai';
+import { AiFillTags, AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock, AiOutlineFolderOpen, AiOutlineSearch, AiFillGithub } from 'react-icons/ai';
 import { FiShoppingBag, FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
 import { GrStatusGood} from 'react-icons/gr';
 import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
@@ -8,7 +8,7 @@ import { BiArchiveIn } from 'react-icons/bi';
 import { BiColorFill } from 'react-icons/bi';
 import { IoMdContacts } from 'react-icons/io';
 import { RiContactsLine, RiStockLine } from 'react-icons/ri';
-import { MdOutlineSupervisorAccount } from 'react-icons/md';
+import { MdOutlineSupervisorAccount, MdRecommend } from 'react-icons/md';
 import { HiOutlineRefresh } from 'react-icons/hi';
 import { TiTick } from 'react-icons/ti';
 import { GiLouvrePyramid } from 'react-icons/gi';
@@ -535,7 +535,7 @@ export const links = [
         icon: <AiOutlineSearch />,
       },
       {
-        name: 'Developers',
+        name: 'Connect',
         icon: <RiContactsLine />,
       },
     ],
@@ -544,20 +544,20 @@ export const links = [
     title: 'Apps',
     links: [
       {
-        name: 'calendar',
+        name: 'Pull_Requests',
         icon: <AiOutlineCalendar />,
       },
       {
-        name: 'kanban',
-        icon: <BsKanban />,
+        name: 'Domains',
+        icon: <AiFillTags />,
       },
       {
-        name: 'editor',
-        icon: <FiEdit />,
+        name: 'Github',
+        icon: <AiFillGithub />,
       },
       {
-        name: 'color-picker',
-        icon: <BiColorFill />,
+        name: 'Recommended_Projects',
+        icon: <MdRecommend />,
       },
     ],
   },
@@ -3216,13 +3216,13 @@ export const lineCustomSeries = [
 ];
 
 export const pieChartData = [
-  { x: 'Labour', y: 18, text: '18%' },
-  { x: 'Legal', y: 8, text: '8%' },
-  { x: 'Production', y: 15, text: '15%' },
-  { x: 'License', y: 11, text: '11%' },
-  { x: 'Facilities', y: 18, text: '18%' },
-  { x: 'Taxes', y: 14, text: '14%' },
-  { x: 'Insurance', y: 16, text: '16%' },
+  { x: 'Web Delopment', y: 18, text: '18%' },
+  { x: 'Web Delopment', y: 8, text: '8%' },
+  { x: 'Web Delopment', y: 15, text: '15%' },
+  { x: 'Web Delopment', y: 11, text: '11%' },
+  { x: 'Web Delopment', y: 18, text: '18%' },
+  { x: 'Web Delopment', y: 14, text: '14%' },
+  { x: 'Web Delopment', y: 16, text: '16%' },
 ];
 
 export const contextMenuItems = [

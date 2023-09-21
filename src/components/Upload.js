@@ -149,7 +149,7 @@ function Home() {
                 <div className="relative mr-4 text-left md:w-full lg:w-full xl:w-full">
                   <div className="relative flex items-center justify-center bg-no-repeat bg-cover sm:px-6 lg:px-8">
                     <div className="absolute inset-0 z-0"></div>
-                    <div className="z-10 w-full p-10 bg-sky-500 bg-opacity-70 sm:max-w-lg rounded-xl">
+                    <div className="z-10 w-full p-10 bg-[#03c9d7] bg-opacity-70 sm:max-w-lg rounded-xl">
                       <div className="text-center">
                         <h2 className="mt-5 text-3xl font-bold text-gray-200">
                           Project Upload!
@@ -179,7 +179,7 @@ function Home() {
                                 </div>
                                 <p className="text-center text-gray-200 pointer-none">
                                   <span className="text-sm">Drag and drop</span>{' '}
-                                  images here <br /> or{' '}
+                                  files here <br /> or{' '}
                                   <span className="text-blue-600">
                                     Click to upload
                                   </span>{' '}
@@ -198,7 +198,7 @@ function Home() {
                             </label>
                           </div>
                           <p className="text-sm text-gray-200 pointer-none">
-                            <span>File type: jpg, png, jpeg, etc.</span>
+                            <span>File type: .zip, etc.</span>
                           </p>
                           {/* {% if error %}
                                           <p className="w-full my-4 font-semibold text-center text-orange-600 text-md animate-pulse">{{ error }}</p>
