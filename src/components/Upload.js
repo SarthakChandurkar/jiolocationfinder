@@ -9,6 +9,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import "../css/style.css"
 
+
 function Home() {
   // const [file, setFile] = useState();
   const [url, setUrl] = useState();
@@ -98,7 +99,7 @@ function Home() {
                   </label>
                   <div className="relative">
                     <input
-                      className="w-full px-4 py-3 text-xl font-medium leading-8 text-white transition duration-200 ease-in-out bg-gray-700 border-transparent rounded-md shadow-2xl outline-none border-y border-t-gray-600 focus:border focus:border-blue-600 focus:bg-transparent focus:ring-2 focus:ring-blue-600"
+                      className="title w-full px-4 py-3 text-xl font-medium leading-8 text-white transition duration-200 ease-in-out bg-sky-500 border-transparent rounded-md shadow-2xl outline-none border-y border-t-gray-600 focus:border focus:border-blue-600 focus:bg-transparent focus:ring-2 focus:ring-blue-600"
                       value={url}
                       readOnly
                     />
@@ -148,13 +149,13 @@ function Home() {
                 <div className="relative mr-4 text-left md:w-full lg:w-full xl:w-full">
                   <div className="relative flex items-center justify-center bg-no-repeat bg-cover sm:px-6 lg:px-8">
                     <div className="absolute inset-0 z-0"></div>
-                    <div className="z-10 w-full p-10 bg-gray-700 bg-opacity-70 sm:max-w-lg rounded-xl">
+                    <div className="z-10 w-full p-10 bg-sky-500 bg-opacity-70 sm:max-w-lg rounded-xl">
                       <div className="text-center">
                         <h2 className="mt-5 text-3xl font-bold text-gray-200">
-                          Image Upload!
+                          Project Upload!
                         </h2>
                         <p className="mt-2 text-sm text-gray-200">
-                          Free unlimited cdn for images.
+                          Upload project folder.
                         </p>
                       </div>
                       <form
@@ -164,7 +165,7 @@ function Home() {
                       >
                         <div className="grid grid-cols-1 space-y-2">
                           <label className="text-sm font-bold tracking-wide text-gray-200">
-                            Attach Image
+                            Attach Project 
                           </label>
                           <div className="flex items-center justify-center w-full">
                             <label className="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-200 border-dashed rounded-lg cursor-pointer hover:bg-white hover:bg-opacity-20">

@@ -66,12 +66,12 @@ const App = () => {
               <Routes>
                 {/* dashboard  */}
                 <Route path="/" element={(<Ecommerce />)} />
-                <Route path="/Projects" element={(<Ecommerce />)} />
+                <Route path="/Profile" element={(<Ecommerce />)} />
 
                 {/* pages  */}
-                <Route path="/orders" element={<Orders />} />
-                <Route path="/employees" element={<Employees />} />
-                <Route path="/customers" element={<Customers />} />
+                <Route path="/Project_Status" element={<Orders />} />
+                <Route path="/Project_Hunt" element={<Employees />} />
+                <Route path="/Developers" element={<Customers />} />
 
                 {/* apps  */}
                 <Route path="/kanban" element={<Kanban />} />

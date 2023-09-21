@@ -1,5 +1,5 @@
 import React from 'react';
-import { BsCurrencyDollar } from 'react-icons/bs';
+import { BsDownload } from 'react-icons/bs';
 import { GoPrimitiveDot } from 'react-icons/go';
 import { IoIosMore } from 'react-icons/io';
 import { DropDownListComponent } from '@syncfusion/ej2-react-dropdowns';
@@ -24,22 +24,22 @@ const Ecommerce = () => {
         <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg h-44 rounded-xl w-full lg:w-80 p-8 pt-9 m-3 bg-hero-pattern bg-no-repeat bg-cover bg-center">
           <div className="flex justify-between items-center">
             <div>
-              <p className="font-bold text-gray-400">Earnings</p>
-              <p className="text-2xl">$63,448.78</p>
+              <p className="font-bold text-gray-400">Plagiarism </p>
+              <p className="text-2xl">43%</p>
             </div>
             <button
               type="button"
               style={{ backgroundColor: currentColor }}
               className="text-2xl opacity-0.9 text-white hover:drop-shadow-xl rounded-full  p-4"
             >
-              <BsCurrencyDollar />
+              <BsDownload />
             </button>
           </div>
           <div className="mt-6">
             <Button
               color="white"
               bgColor={currentColor}
-              text="Download"
+              text="Report"
               borderRadius="10px"
             />
           </div>
@@ -69,19 +69,19 @@ const Ecommerce = () => {
       <div className="flex gap-10 flex-wrap justify-center">
         <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl md:w-780  ">
           <div className="flex justify-between">
-            <p className="font-semibold text-xl">Revenue Updates</p>
+            <p className="font-semibold text-xl">Pull Request Updates</p>
             <div className="flex items-center gap-4">
               <p className="flex items-center gap-2 text-gray-600 hover:drop-shadow-xl">
                 <span>
                   <GoPrimitiveDot />
                 </span>
-                <span>Expense</span>
+                <span>Rejected</span>
               </p>
               <p className="flex items-center gap-2 text-green-400 hover:drop-shadow-xl">
                 <span>
                   <GoPrimitiveDot />
                 </span>
-                <span>Budget</span>
+                <span>Accepted</span>
               </p>
             </div>
           </div>
@@ -89,17 +89,17 @@ const Ecommerce = () => {
             <div className=" border-r-1 border-color m-4 pr-10">
               <div>
                 <p>
-                  <span className="text-3xl font-semibold">$93,438</span>
+                  <span className="text-3xl font-semibold">43</span>
                   <span className="p-1.5 hover:drop-shadow-xl cursor-pointer rounded-full text-white bg-green-400 ml-3 text-xs">
-                    23%
+                    20%
                   </span>
                 </p>
-                <p className="text-gray-500 mt-1">Budget</p>
+                <p className="text-gray-500 mt-1">Accepted</p>
               </div>
               <div className="mt-8">
-                <p className="text-3xl font-semibold">$48,487</p>
+                <p className="text-3xl font-semibold">23</p>
 
-                <p className="text-gray-500 mt-1">Expense</p>
+                <p className="text-gray-500 mt-1">Rejected</p>
               </div>
 
               <div className="mt-5">

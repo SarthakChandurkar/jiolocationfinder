@@ -1,7 +1,10 @@
 import React from 'react';
-import { AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock } from 'react-icons/ai';
+import { AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock, AiOutlineFolderOpen, AiOutlineSearch } from 'react-icons/ai';
 import { FiShoppingBag, FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
+import { GrStatusGood} from 'react-icons/gr';
 import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
+import { VscFolder } from 'react-icons/vsc';
+import { BiArchiveIn } from 'react-icons/bi';
 import { BiColorFill } from 'react-icons/bi';
 import { IoMdContacts } from 'react-icons/io';
 import { RiContactsLine, RiStockLine } from 'react-icons/ri';
@@ -462,9 +465,9 @@ export const customersGrid = [
 export const employeesGrid = [
   {
     headerText: 'Project Name',
-    width: '250',
+    width: '190',
     template: gridEmployeeProfile,
-    textAlign: 'Center'
+    textAlign: 'Center',
   },
   {
     field: 'Name',
@@ -474,34 +477,34 @@ export const employeesGrid = [
   },
   {
     field: 'Title',
-    headerText: 'Designation',
-    width: '170',
+    headerText: 'Description',
+    width: '270',
     textAlign: 'Center',
   },
   {
     headerText: 'University',
     width: '120',
     textAlign: 'Center',
-    template: gridEmployeeCountry
+    template: gridEmployeeCountry,
   },
 
   {
     field: 'HireDate',
-    headerText: 'Hire Date',
-    width: '135',
+    headerText: 'Project Start Date',
+    width: '150',
     format: 'yMd',
     textAlign: 'Center'
   },
 
   {
     field: 'ReportsTo',
-    headerText: 'Reports To',
-    width: '120',
+    headerText: 'Tags',
+    width: '140',
     textAlign: 'Center'
   },
   {
     field: 'EmployeeID',
-    headerText: 'Employee ID',
+    headerText: 'Project ID',
     width: '125',
     textAlign: 'Center'
   },
@@ -512,8 +515,9 @@ export const links = [
     title: 'Dashboard',
     links: [
       {
-        name: 'Projects',
-        icon: <FiShoppingBag />,
+        name: 'Profile',
+        icon : <AiOutlineFolderOpen />,
+        // icon: <FiShoppingBag />,
       },
     ],
   },
@@ -522,15 +526,16 @@ export const links = [
     title: 'Pages',
     links: [
       {
-        name: 'orders',
-        icon: <AiOutlineShoppingCart />,
+        name: 'Project_Status',
+
+        icon: <GrStatusGood />,
       },
       {
-        name: 'employees',
-        icon: <IoMdContacts />,
+        name: 'Project_Hunt',
+        icon: <AiOutlineSearch />,
       },
       {
-        name: 'customers',
+        name: 'Developers',
         icon: <RiContactsLine />,
       },
     ],
@@ -653,78 +658,79 @@ export const chatData = [
 
 export const earningData = [
   {
-    icon: <MdOutlineSupervisorAccount />,
-    amount: '39,354',
-    percentage: '-4%',
-    title: 'Customers',
+    // icon: <MdOutlineSupervisorAccount />,
+    icon: <VscFolder />,
+    amount: 'Project 1',
+    percentage: '10%',
+    title: 'Web Development',
     iconColor: '#03C9D7',
     iconBg: '#E5FAFB',
     pcColor: 'red-600',
   },
   {
-    icon: <BsBoxSeam />,
-    amount: '4,396',
-    percentage: '+23%',
-    title: 'Products',
-    iconColor: 'rgb(255, 244, 229)',
-    iconBg: 'rgb(254, 201, 15)',
-    pcColor: 'green-600',
-  },
-  {
-    icon: <FiBarChart />,
-    amount: '423,39',
-    percentage: '+38%',
-    title: 'Sales',
-    iconColor: 'rgb(228, 106, 118)',
-    iconBg: 'rgb(255, 244, 229)',
-
-    pcColor: 'green-600',
-  },
-  {
-    icon: <HiOutlineRefresh />,
-    amount: '39,354',
-    percentage: '-12%',
-    title: 'Refunds',
-    iconColor: 'rgb(0, 194, 146)',
-    iconBg: 'rgb(235, 250, 242)',
+    icon: <VscFolder />,
+    amount: 'Project 2',
+    percentage: '23%',
+    title: 'Machine Learning',
+    iconColor: '#03C9D7',
+    iconBg: '#E5FAFB',
     pcColor: 'red-600',
   },
   {
-    icon: <FiBarChart />,
-    amount: '423,39',
-    percentage: '+38%',
-    title: 'Sales',
-    iconColor: 'rgb(228, 106, 118)',
-    iconBg: 'rgb(255, 244, 229)',
+    icon: <VscFolder />,
+    amount: 'Project 3',
+    percentage: '38%',
+    title: 'Machine Learning',
+    iconColor: '#03C9D7',
+    iconBg: '#E5FAFB',
 
-    pcColor: 'green-600',
-  },
-  {
-    icon: <HiOutlineRefresh />,
-    amount: '39,354',
-    percentage: '-12%',
-    title: 'Refunds',
-    iconColor: 'rgb(0, 194, 146)',
-    iconBg: 'rgb(235, 250, 242)',
     pcColor: 'red-600',
   },
   {
-    icon: <FiBarChart />,
-    amount: '423,39',
-    percentage: '+38%',
-    title: 'Sales',
-    iconColor: 'rgb(228, 106, 118)',
-    iconBg: 'rgb(255, 244, 229)',
-
-    pcColor: 'green-600',
+    icon: <VscFolder />,
+    amount: 'Project 4',
+    percentage: '12%',
+    title: 'Web Development',
+    iconColor: '#03C9D7',
+    iconBg: '#E5FAFB',
+    pcColor: 'red-600',
   },
   {
-    icon: <HiOutlineRefresh />,
-    amount: '39,354',
-    percentage: '-12%',
-    title: 'Refunds',
-    iconColor: 'rgb(0, 194, 146)',
-    iconBg: 'rgb(235, 250, 242)',
+    icon: <VscFolder />,
+    amount: 'Project 5',
+    percentage: '38%',
+    title: 'Web Development',
+    iconColor: '#03C9D7',
+    iconBg: '#E5FAFB',
+
+    pcColor: 'red-600',
+  },
+  {
+    icon: <VscFolder />,
+    amount: 'Project 6',
+    percentage: '12%',
+    title: 'Web Development',
+    iconColor: '#03C9D7',
+    iconBg: '#E5FAFB',
+    pcColor: 'red-600',
+  },
+  {
+    icon: <VscFolder />,
+    amount: 'Project 7',
+    percentage: '38%',
+    title: 'Machine Learning',
+    iconColor: '#03C9D7',
+    iconBg: '#E5FAFB',
+
+    pcColor: 'red-600',
+  },
+  {
+    icon: <VscFolder />,
+    amount: 'Project 8',
+    percentage: '12%',
+    title: 'Hardware',
+    iconColor: '#03C9D7',
+    iconBg: '#E5FAFB',
     pcColor: 'red-600',
   },
 ];
@@ -1568,80 +1574,80 @@ export const employeesData = [
   {
     EmployeeID: 1,
     Name: 'Online Blood Bank Web Application',
-    Title: 'Sales Representative',
+    Title: 'This is an online blood bank management system that helps in managing various blood bank operations effectively. The project consists of a central depository containing various blood deposits available along with associated details. These details include blood type, storage area and date of storage.',
     HireDate: '01/02/2021',
     Country: 'SGBAU',
-    ReportsTo: 'Carson',
+    ReportsTo: 'Web Development',
     EmployeeImage:
       avatar3,
   },
   {
     EmployeeID: 2,
     Name: 'Android Spy Camera App',
-    Title: 'Marketing Head',
+    Title: 'This is an online blood bank management system that helps in managing various blood bank operations effectively. The project consists of a central depository containing various blood deposits available along with associated details. These details include blood type, storage area and date of storage.',
     HireDate: '01/02/2021',
-    Country: 'SGBAU',
-    ReportsTo: 'Carson',
+    Country: 'University of Delhi',
+    ReportsTo: 'Android Development',
     EmployeeImage:
       avatar3,
   },
   {
     EmployeeID: 3,
     Name: 'Doctor Appointment Booking System',
-    Title: 'HR',
+    Title: 'This is an online blood bank management system that helps in managing various blood bank operations effectively. The project consists of a central depository containing various blood deposits available along with associated details. These details include blood type, storage area and date of storage.',
     HireDate: '01/02/2021',
     Country: 'SGBAU',
-    ReportsTo: 'Carson',
+    ReportsTo: 'Machine Learning',
     EmployeeImage:
       avatar4,
   },
   {
     EmployeeID: 4,
     Name: 'Android Local Geofence System',
-    Title: 'Marketing Head',
+    Title: 'This is an online blood bank management system that helps in managing various blood bank operations effectively. The project consists of a central depository containing various blood deposits available along with associated details. These details include blood type, storage area and date of storage.',
     HireDate: '01/02/2021',
-    Country: 'SGBAU',
-    ReportsTo: 'Carson',
+    Country: 'Calcutta University',
+    ReportsTo: 'Machine Learning',
     EmployeeImage:
       avatar2,
   },
   {
     EmployeeID: 5,
     Name: 'Android Local Geofence System',
-    Title: 'HR',
+    Title: 'This is an online blood bank management system that helps in managing various blood bank operations effectively. The project consists of a central depository containing various blood deposits available along with associated details. These details include blood type, storage area and date of storage.',
     HireDate: '01/02/2021',
-    Country: 'SGBAU',
-    ReportsTo: 'Carson',
+    Country: 'University of Delhi',
+    ReportsTo: 'Android Development',
     EmployeeImage:
       avatar,
   },
   {
     EmployeeID: 4,
     Name: 'Android Local Geofence System',
-    Title: 'Marketing Head',
+    Title: 'This is an online blood bank management system that helps in managing various blood bank operations effectively. The project consists of a central depository containing various blood deposits available along with associated details. These details include blood type, storage area and date of storage.',
     HireDate: '01/02/2021',
-    Country: 'SGBAU',
-    ReportsTo: 'Carson',
+    Country: 'Calcutta University',
+    ReportsTo: 'Android Development',
     EmployeeImage:
       avatar,
   },
   {
     EmployeeID: 5,
     Name: 'Android Local Geofence System',
-    Title: 'HR',
+    Title: 'This is an online blood bank management system that helps in managing various blood bank operations effectively. The project consists of a central depository containing various blood deposits available along with associated details. These details include blood type, storage area and date of storage.',
     HireDate: '01/02/2021',
-    Country: 'SGBAU',
-    ReportsTo: 'Carson',
+    Country: 'University of Delhi',
+    ReportsTo: 'Android Development',
     EmployeeImage:
       avatar2,
   },
   {
     EmployeeID: 1,
     Name: 'Online Blood Bank Web Application',
-    Title: 'Sales Representative',
+    Title: 'This is an online blood bank management system that helps in managing various blood bank operations effectively. The project consists of a central depository containing various blood deposits available along with associated details. These details include blood type, storage area and date of storage.',
     HireDate: '01/02/2021',
     Country: 'SGBAU',
-    ReportsTo: 'Carson',
+    ReportsTo: 'Web Development',
     EmployeeImage:
       avatar2,
 
@@ -1649,47 +1655,47 @@ export const employeesData = [
   {
     EmployeeID: 2,
     Name: 'Android Spy Camera App',
-    Title: 'Marketing Head',
+    Title: 'This is an online blood bank management system that helps in managing various blood bank operations effectively. The project consists of a central depository containing various blood deposits available along with associated details. These details include blood type, storage area and date of storage.',
     HireDate: '01/02/2021',
     Country: 'SGBAU',
-    ReportsTo: 'Carson',
+    ReportsTo: 'Android Development',
     EmployeeImage:
       avatar3,
   },
   {
     EmployeeID: 3,
     Name: 'Doctor Appointment Booking System',
-    Title: 'HR',
+    Title: 'This is an online blood bank management system that helps in managing various blood bank operations effectively. The project consists of a central depository containing various blood deposits available along with associated details. These details include blood type, storage area and date of storage.',
     HireDate: '01/02/2021',
     Country: 'SGBAU',
-    ReportsTo: 'Carson',
+    ReportsTo: 'Web Development',
     EmployeeImage:
       avatar4,
   },
   {
     EmployeeID: 4,
     Name: 'Android Local Geofence System',
-    Title: 'Marketing Head',
+    Title: 'This is an online blood bank management system that helps in managing various blood bank operations effectively. The project consists of a central depository containing various blood deposits available along with associated details. These details include blood type, storage area and date of storage.',
     HireDate: '01/02/2021',
     Country: 'SGBAU',
-    ReportsTo: 'Carson',
+    ReportsTo: 'Android Development',
     EmployeeImage:
       avatar2,
   },
   {
     EmployeeID: 5,
     Name: 'Android Local Geofence System',
-    Title: 'HR',
+    Title: 'This is an online blood bank management system that helps in managing various blood bank operations effectively. The project consists of a central depository containing various blood deposits available along with associated details. These details include blood type, storage area and date of storage.',
     HireDate: '01/02/2021',
     Country: 'SGBAU',
-    ReportsTo: 'Carson',
+    ReportsTo: 'Android Development',
     EmployeeImage:
       avatar,
   },
   {
     EmployeeID: 4,
     Name: 'Penjani Inyene',
-    Title: 'Marketing Head',
+    Title: 'This is an online blood bank management system that helps in managing various blood bank operations effectively. The project consists of a central depository containing various blood deposits available along with associated details. These details include blood type, storage area and date of storage.',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -2220,7 +2226,7 @@ export const ordersData = [
   {
     OrderID: 345653,
     CustomerName: 'This is an online blood bank management system that helps in managing various blood bank operations effectively. The project consists of a central depository containing various blood deposits available along with associated details. These details include blood type, storage area and date of storage.',
-    TotalAmount: 'GCOEA',
+    TotalAmount: 'Sipna',
     OrderItems: 'Android Spy Camera App',
     Location: 'Sarthak Chandurkar',
     Status: 'complete',
@@ -2253,7 +2259,7 @@ export const ordersData = [
   {
     OrderID: 748975,
     CustomerName: 'This is an online blood bank management system that helps in managing various blood bank operations effectively. The project consists of a central depository containing various blood deposits available along with associated details. These details include blood type, storage area and date of storage.',
-    TotalAmount: 'GCOEA',
+    TotalAmount: 'Sipna',
     OrderItems: 'Graphical password to Avoid Shoulder Surfing',
     Location: 'Spandan Dongre',
     Status: 'rejected',
@@ -2275,7 +2281,7 @@ export const ordersData = [
   {
     OrderID: 944895,
     CustomerName: 'This is an online blood bank management system that helps in managing various blood bank operations effectively. The project consists of a central depository containing various blood deposits available along with associated details. These details include blood type, storage area and date of storage.',
-    TotalAmount: 'GCOEA',
+    TotalAmount: 'PRPGEIA',
     OrderItems: 'College Placement System Using Python',
     Location: 'Nidhi Kanungo',
     Status: 'active',
@@ -2308,7 +2314,7 @@ export const ordersData = [
   {
     OrderID: 874534,
     CustomerName: 'This is an online blood bank management system that helps in managing various blood bank operations effectively. The project consists of a central depository containing various blood deposits available along with associated details. These details include blood type, storage area and date of storage.',
-    TotalAmount: 'GCOEA',
+    TotalAmount: 'PRPGEIA',
     OrderItems: 'Online Auction System using Python',
     Location: 'Sarthak',
     Status: 'canceled',
@@ -2319,7 +2325,7 @@ export const ordersData = [
   {
     OrderID: 38489,
     CustomerName: 'This is an online blood bank management system that helps in managing various blood bank operations effectively. The project consists of a central depository containing various blood deposits available along with associated details. These details include blood type, storage area and date of storage.',
-    TotalAmount: 'GCOEA',
+    TotalAmount: 'PRPGEIA',
     OrderItems: 'Online Voting System Project Python',
     Location: 'Sarya',
     Status: 'active',
@@ -3247,22 +3253,22 @@ export const ecomPieChartData = [
 
 export const stackedChartData = [
   [
-    { x: 'Jan', y: 111.1 },
-    { x: 'Feb', y: 127.3 },
-    { x: 'Mar', y: 143.4 },
-    { x: 'Apr', y: 159.9 },
-    { x: 'May', y: 159.9 },
-    { x: 'Jun', y: 159.9 },
-    { x: 'July', y: 159.9 },
+    { x: 'Jan', y: 5 },
+    { x: 'Feb', y: 3 },
+    { x: 'Mar', y: 8 },
+    { x: 'Apr', y: 3 },
+    { x: 'May', y: 9 },
+    { x: 'Jun', y: 10 },
+    { x: 'July', y: 5 },
   ],
   [
-    { x: 'Jan', y: 111.1 },
-    { x: 'Feb', y: 127.3 },
-    { x: 'Mar', y: 143.4 },
-    { x: 'Apr', y: 159.9 },
-    { x: 'May', y: 159.9 },
-    { x: 'Jun', y: 159.9 },
-    { x: 'July', y: 159.9 },
+    { x: 'Jan', y: 2 },
+    { x: 'Feb', y: 1 },
+    { x: 'Mar', y: 5 },
+    { x: 'Apr', y: 3 },
+    { x: 'May', y: 2 },
+    { x: 'Jun', y: 6 },
+    { x: 'July', y: 1 },
   ],
 ];
 
@@ -3272,7 +3278,7 @@ export const stackedCustomSeries = [
     dataSource: stackedChartData[0],
     xName: 'x',
     yName: 'y',
-    name: 'Budget',
+    name: 'Accepted',
     type: 'StackingColumn',
     background: 'blue',
 
@@ -3282,7 +3288,7 @@ export const stackedCustomSeries = [
     dataSource: stackedChartData[1],
     xName: 'x',
     yName: 'y',
-    name: 'Expense',
+    name: 'Rejected',
     type: 'StackingColumn',
     background: 'red',
 
@@ -3303,9 +3309,9 @@ export const stackedPrimaryXAxis = {
 
 export const stackedPrimaryYAxis = {
   lineStyle: { width: 0 },
-  minimum: 100,
-  maximum: 400,
-  interval: 100,
+  minimum: 1,
+  maximum: 14,
+  interval: 2,
   majorTickLines: { width: 0 },
   majorGridLines: { width: 1 },
   minorGridLines: { width: 1 },
